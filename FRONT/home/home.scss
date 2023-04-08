@@ -1,0 +1,58 @@
+body{
+    .container-fluid{
+        background-color: black;
+        .navbar{
+            border-bottom: 20px;
+            .navbar-toggler{
+                .navbar-toggler-icon{
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 30, 10, 2.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+                }
+            }
+            .navbar-nav{
+                gap: 10px;
+                .m1
+                {
+                    font-size: 20px;
+                    font-weight: 300;
+                    /*&:hover{
+                        text-decoration: underline;
+                        color: rgb(253, 61, 61);
+                        transition: all 10;
+                    }   */
+                    a{
+                        color:white;
+                        p1::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 0.1em;
+                            background-color: hotpink;
+                            opacity: 0;
+                            transition: opacity 300ms, transform 300ms;
+                        }
+                    
+                        p1:hover::after,
+                        p1:focus::after {
+                            opacity: 1;
+                            transform: translate3d(0, 0.2em, 0);
+                        }
+                    }
+    	            
+                }
+                .m3{
+                    font-size: 25px;
+                    font-weight: 300;
+                    &:hover {
+                        background-color: rgb(253, 61, 61);
+                        border-radius: 10px;
+                    }
+                    a{
+                        color:white;   
+                    } 
+                }
+            }
+        }
+    }
+}
