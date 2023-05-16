@@ -9,7 +9,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black;
+  background: #b1b1b1 !important;
+  
+  background-image: url(../pictures/Pozadina.png) !important;
 }
 
 .login {
